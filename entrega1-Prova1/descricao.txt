@@ -1,0 +1,27 @@
+| TRABALHO DA DISCIPLINA DE CIÊNCIA DE DADOS - 1ª AVALIAÇÃO |
+
+| PROFESSOR | -> RICARDO ROBERTO DE LIMA
+
+| ALUNOS |
+    . PEDRO NÍCOLLAS PEREIRA LEON LOPES
+    . VINÍCIUS VIEIRA DE LIMA
+
+| REQUISITOS DE ENTREGA |
+
+    1 – Desenvolver um Projeto de Machine Learning com geração de dados
+    automáticos com IA Generativa, baseado nos experimentos de sala de aulas com o
+    modelo, utilizando qualquer framework web em python (Flask, Django, FastAPI, Bottle,
+    Streamlit):
+        . Classificação;
+        . Agrupamento de Dados (Clusterização).
+
+    2 – Construir um novo projeto de Machine Learning com os seguintes itens:
+    Escolher um Dataset com o Kaggle DAtaset.
+    Construir um código com python que implemente um Modelo de Machine Learning de Classificação Binária, 
+    escolha o algoritimo e faça o processo de Validação e Avaliação do Modelo de Machine Learning com Acurácia, precisão, F1 Score e Matriz de Confusão.
+
+    3 - Construir um outroprojeto de Machine Learning (Regressão):
+    Escolher um Dataset com Base qualquer.
+    Construir um código com python que implemente o modelo de regressão linear.
+
+| ENVIO | -> Deverá ser enviado por: ricardo.roberto@maisunifacisa.com.br
