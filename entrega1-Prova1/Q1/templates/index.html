@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificação de Tumores (Benigno ou Maligno)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+    <link href="/static/favicon.ico" rel="icon">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="form-container">
+                    <h2 class="text-center mb-4">Formulário de Classificação de Tumore <br> (Benigno ou Maligno)</h2>
+                    <form action="/result" method="POST">
+                        <!-- Nome do Paciente -->
+                        <div class="row">
+                            <div class="mb-3 col-md-12">
+                                <label for="pacient_name" class="form-label">Nome do Paciente</label>
+                                <input type="text" class="form-control" id="pacient_name" name="pacient_name" placeholder="Digite o nome do Paciente" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- Idade do Paciente-->
+                            <div class="mb-3 col-md-6">
+                                <label for="person_age" class="form-label">Idade</label>
+                                <input type="number" class="form-control" id="pacient_age" name="pacient_age" placeholder="Digite a idade do paciente" min="1" required>
+                            </div>
+                            <!-- Valor médio do Raio do tumor -->
+                            <div class="mb-3 col-md-6">
+                                <label for="media_raio" class="form-label">Valor médio do raio do Tumor</label>
+                                <input type="number" step="0.01" class="form-control" id="media_raio" name="media_raio" placeholder="Digite o Valor médio do raio do Tumor" min="6" required>
+                                <i><small>Valores possíveis: 6.00 - 26.00</small></i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- Valor médio da Textura do Tumor -->
+                            <div class="mb-3 col-md-6">
+                                <label for="media_textura" class="form-label">Valor médio da Textura do Tumor</label>
+                                <input type="number" step="0.01" class="form-control" id="media_textura" name="media_textura" placeholder="Valor médio da Textura do Tumor" min="0" required>
+                                <i><small>Valores possíveis: 9.00 - 34.00</small></i>
+                            </div>
+                            <!-- Valor médio do Perímetro do Tumor -->
+                            <div class="mb-3 col-md-6">
+                                <label for="media_perimetro" class="form-label">Valor médio do Perímetro do Tumor</label>
+                                <input type="number" step="0.01" class="form-control" id="media_perimetro" name="media_perimetro" placeholder="Digite o valor médio do Perímetro do Tumor" min="0" required>
+                                <i><small>Valores possíveis: 52.00 - 174.00</small></i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- Valor médio da área do Tumor -->
+                            <div class="mb-3 col-md-6">
+                                <label for="media_area" class="form-label">Valor médio da área do Tumor</label>
+                                <input type="number" step="0.1" class="form-control" id="media_area" name="media_area" placeholder="Digite o valor médio da área do Tumor" min="0" required>
+                                <i><small>Valores possíveis: 157.00 - 2051.00</small></i>
+                            </div>
+                            <!-- Valor médio da Suavidade do Tumor -->
+                            <div class="mb-3 col-md-6">
+                                <label for="mean_smoothness" class="form-label">Valor médio da Suavidade do Tumor</label>
+                                <input type="number" step="0.01" class="form-control" id="mean_smoothness" name="mean_smoothness" placeholder="Valor médio da Suavidade do Tumor" required>
+                                <i><small>Valores possíveis: 0.06 - 0.13</small></i>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-custom w-100">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
